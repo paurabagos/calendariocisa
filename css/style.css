@@ -702,7 +702,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     z-index: 2; }
     .team-vs .team-details img {
-      width: 20px; }
+      max-width: 20px; }
   .team-vs .team-1, .team-vs .team-2 {
     padding: 30px; }
   .team-vs .team-2 {
