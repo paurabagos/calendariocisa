@@ -803,7 +803,7 @@ h5,
 
 /* Blocks */
 .hero {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -821,6 +821,12 @@ h5,
   right: 0;
   bottom: 0;
 }
+
+.hero.overlay p {
+  position: relative;
+  top: 320px;
+}
+
 .hero h1 {
   font-weight: 700;
   font-size: 4rem;
@@ -951,7 +957,7 @@ h5,
 }
 
 .latest-news {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 .latest-news .post-entry {
   position: relative;
