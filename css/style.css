@@ -807,6 +807,11 @@ h5,
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.hero.overlay {
+  background-image: url("../images/bg_3.jpg");
+}
+
 .hero,
 .hero > .container > .row {
   height: 90vh;
@@ -820,6 +825,29 @@ h5,
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .hero.overlay {
+    background-image: url("../images/bg_3_transparent.png");
+  }
+
+  .hero.overlay:before {
+    display: none;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .hero.overlay p {
