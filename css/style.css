@@ -809,7 +809,7 @@ h5,
 }
 .hero,
 .hero > .container > .row {
-  height: 100vh;
+  height: 90vh;
   min-height: 500px;
 }
 .hero.overlay:before {
@@ -824,7 +824,7 @@ h5,
 
 .hero.overlay p {
   position: relative;
-  top: 320px;
+  top: 280px;
 }
 
 .hero h1 {
