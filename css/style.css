@@ -820,7 +820,7 @@ h5,
 .hero.overlay:before {
   content: "";
   position: absolute;
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0);
   top: 0;
   left: 0;
   right: 0;
@@ -1160,7 +1160,7 @@ h5,
 }
 .widget-vs .vs > span {
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   background: #ee1e46;
   padding: 5px 20px;
   border-radius: 30px;
@@ -1609,6 +1609,7 @@ td {
 .country-cell {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 14px;
 }
 
@@ -1616,4 +1617,13 @@ td {
   width: 36px;
   height: 36px;
   object-fit: cover;
+}
+
+.post-entry a img {
+  height: auto;
+  width: 100%;
+}
+
+.post-entry a img.last-post {
+  width: 160%;
 }
