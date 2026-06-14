@@ -1582,7 +1582,7 @@ h5,
 .group-card {
   background: white;
   border: 1px solid #ddd;
-  border-radius: 16px;
+  border-radius: 0px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   font-family: Arial, sans-serif;
