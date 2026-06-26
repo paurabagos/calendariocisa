@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calendario Barricas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style-brackets.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <header class="site-navbar py-4" role="banner">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="site-logo">
+            <a href="index.html">
+              <img src="imagenes-cisa/cisa-logo.png" alt="Logo" style="max-width: 100px;"/>
+            </a>
+          </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="matches.html" class="nav-link">Fase de Grupos</a></li>
+                <li><a href="brackets.html" class="nav-link">Grupos y Brackets</a></li>
+              </ul>
+            </nav>
+
+            <a
+              id="blue-burger"
+              href="#"
+              class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-blue">
+              <span class="icon-menu h3 text-blue"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+      <!-- ═══ SIDEBAR ═══ -->
+      <aside class="sidebar">
+        <div class="gc">
+          <div class="gc-hd">GRUPO A</div>
+          <ul>
+            <li><span class="fi">🇲🇽</span>MÉXICO<span class="points">9</span></li>
+            <li><span class="fi">🇿🇦</span>SUDÁFRICA<span class="points">4</span></li>
+            <li><span class="fi">🇰🇷</span>COREA DEL SUR<span class="points">3</span></li>
+            <li><span class="fi">🇨🇿</span>REPÚBLICA CHECA<span class="points">1</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO B</div>
+          <ul>
+            <li><span class="fi">🇨🇦</span>CANADÁ<span class="points">4</span></li>
+            <li><span class="fi">🇧🇦</span>BOSNIA &amp; HERZ.<span class="points">4</span></li>
+            <li><span class="fi">🇶🇦</span>QATAR<span class="points">1</span></li>
+            <li><span class="fi">🇨🇭</span>SUIZA<span class="points">7</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO C</div>
+          <ul>
+            <li><span class="fi">🇧🇷</span>BRASIL<span class="points">7</span></li>
+            <li><span class="fi">🇲🇦</span>MARRUECOS<span class="points">7</span></li>
+            <li><span class="fi">🇭🇹</span>HAITÍ<span class="points">0</span></li>
+            <li><span class="fi">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>ESCOCIA<span class="points">3</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO D</div>
+          <ul>
+            <li><span class="fi">🇺🇸</span>ESTADOS UNIDOS<span class="points">6</span></li>
+            <li><span class="fi">🇵🇾</span>PARAGUAY<span class="points">3</span></li>
+            <li><span class="fi">🇦🇺</span>AUSTRALIA<span class="points">3</span></li>
+            <li><span class="fi">🇹🇷</span>TURQUÍA<span class="points">0</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO E</div>
+          <ul>
+            <li><span class="fi">🇩🇪</span>ALEMANIA<span class="points">6</span></li>
+            <li><span class="fi">🇨🇼</span>CURAZAO<span class="points">1</span></li>
+            <li><span class="fi">🇨🇮</span>COSTA DE MARFIL<span class="points">6</span></li>
+            <li><span class="fi">🇪🇨</span>ECUADOR<span class="points">4</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO F</div>
+          <ul>
+            <li><span class="fi">🇳🇱</span>PAÍSES BAJOS<span class="points">7</span></li>
+            <li><span class="fi">🇯🇵</span>JAPÓN<span class="points">5</span></li>
+            <li><span class="fi">🇸🇪</span>SUECIA<span class="points">4</span></li>
+            <li><span class="fi">🇹🇳</span>TÚNEZ<span class="points">0</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO G</div>
+          <ul>
+            <li><span class="fi">🇧🇪</span>BÉLGICA<span class="points">2</span></li>
+            <li><span class="fi">🇪🇬</span>EGIPTO<span class="points">4</span></li>
+            <li><span class="fi">🇮🇷</span>IRÁN<span class="points">2</span></li>
+            <li><span class="fi">🇳🇿</span>NUEVA ZELANDA<span class="points">1</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO H</div>
+          <ul>
+            <li><span class="fi">🇪🇸</span>ESPAÑA<span class="points">4</span></li>
+            <li><span class="fi">🇨🇻</span>CABO VERDE<span class="points">2</span></li>
+            <li><span class="fi">🇸🇦</span>ARABIA SAUDITA<span class="points">1</span></li>
+            <li><span class="fi">🇺🇾</span>URUGUAY<span class="points">2</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO I</div>
+          <ul>
+            <li><span class="fi">🇫🇷</span>FRANCIA<span class="points">6</span></li>
+            <li><span class="fi">🇸🇳</span>SENEGAL<span class="points">0</span></li>
+            <li><span class="fi">🇮🇶</span>IRAK<span class="points">0</span></li>
+            <li><span class="fi">🇳🇴</span>NORUEGA<span class="points">6</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO J</div>
+          <ul>
+            <li><span class="fi">🇦🇷</span>ARGENTINA<span class="points">6</span></li>
+            <li><span class="fi">🇩🇿</span>ARGELIA<span class="points">3</span></li>
+            <li><span class="fi">🇦🇹</span>AUSTRIA<span class="points">3</span></li>
+            <li><span class="fi">🇯🇴</span>JORDANIA<span class="points">0</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO K</div>
+          <ul>
+            <li><span class="fi">🇵🇹</span>PORTUGAL<span class="points">4</span></li>
+            <li><span class="fi">🇨🇩</span>RD CONGO<span class="points">1</span></li>
+            <li><span class="fi">🇺🇿</span>UZBEKISTÁN<span class="points">0</span></li>
+            <li><span class="fi">🇨🇴</span>COLOMBIA<span class="points">6</span></li>
+          </ul>
+        </div>
+        <div class="gc">
+          <div class="gc-hd">GRUPO L</div>
+          <ul>
+            <li><span class="fi">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>INGLATERRA<span class="points">4</span></li>
+            <li><span class="fi">🇭🇷</span>CROACIA<span class="points">3</span></li>
+            <li><span class="fi">🇬🇭</span>GHANA<span class="points">4</span></li>
+            <li><span class="fi">🇵🇦</span>PANAMÁ<span class="points">0</span></li>
+          </ul>
+        </div>
+      </aside>
+      
+      <!-- ═══ BRACKET ═══ -->
+      <main class="bracket-area">
+        <div class="bracket-scroll">
+          <!-- Round label row -->
+          <div class="round-labels">
+            <div class="rl">R32</div>
+            <div class="rl">R16</div>
+            <div class="rl">CF</div>
+            <div class="rl ctr">SF · 3ER · FINAL</div>
+            <div class="rl">CF</div>
+            <div class="rl">R16</div>
+            <div class="rl">R32</div>
+          </div>
+
+          <!--
+        BRACKET GRID
+        ════════════
+        7 columns × 8 rows.
+
+        Naming: grid-column / grid-row
+
+        COL 1 = R32-Left   (8 cells, each 1 row)
+        COL 2 = R16-Left   (4 cells, each 2 rows)
+        COL 3 = QF-Left    (2 cells, each 4 rows)
+        COL 4 = Center     (1 cell,  8 rows — SF top/bottom + Final + Bronze + Champs)
+        COL 5 = QF-Right   (2 cells, each 4 rows)
+        COL 6 = R16-Right  (4 cells, each 2 rows)
+        COL 7 = R32-Right  (8 cells, each 1 row)
+
+        Connectors are drawn by CSS pseudo-elements on the .cell wrappers:
+          conn-r = exits right side (left-bracket parent cells)
+          conn-l = exits left side  (right-bracket parent cells)
+          tab-r  = child tab to meet parent's right-side vertical bar
+          tab-l  = child tab to meet parent's left-side vertical bar
+      -->
+          <div class="bracket">
+            <!-- ══ COL 1: R32-LEFT ══ -->
+            <!-- row 1 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 1">
+              <div class="m">
+                <div class="m-date">30 JUN · NYJ</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 I</span><span class="tn ph">🇫🇷 Francia</span></div>
+                  <div class="slot"><span class="seed">3 C/D/F/G/H</span><span class="tn ph">󠁧󠁢󠁳󠁣󠁴󠁿🇸🇪 Suecia</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 2 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 2">
+              <div class="m">
+                <div class="m-date">29 JUN · BOS</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 E</span><span class="tn">🇩🇪 Alemania</span></div>
+                  <div class="slot"><span class="seed">3 A/B/C/D/F</span><span class="tn ph">🇸🇪 Suecia</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 3 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 3">
+              <div class="m">
+                <div class="m-date">28 JUN · LA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">2 A</span><span class="tn">🇿🇦 Sudáfrica</span></div>
+                  <div class="slot"><span class="seed">2 B</span><span class="tn">🇨🇦 Canadá</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 4 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 4">
+              <div class="m">
+                <div class="m-date">29 JUN · MON</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 F</span><span class="tn">🇳🇱 Países Bajos</span></div>
+                  <div class="slot"><span class="seed">2 C</span><span class="tn">🇲🇦 Marruecos</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 5 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 5">
+              <div class="m">
+                <div class="m-date">30 JUN · DAL</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">2 E</span><span class="tn">🇨🇮 Costa de Marfil</span></div>
+                  <div class="slot"><span class="seed">2 I</span><span class="tn ph">🇳🇴 Noruega</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 6 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 6">
+              <div class="m">
+                <div class="m-date">29 JUN · HOU</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 C</span><span class="tn">󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴󠁿🇧🇷 Brasil</span></div>
+                  <div class="slot"><span class="seed">2 F</span><span class="tn ph">🇯🇵 Japón</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 7 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 7">
+              <div class="m">
+                <div class="m-date">30 JUN · MXC</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 A</span><span class="tn">🇲🇽 México</span></div>
+                  <div class="slot"><span class="seed">3 C/E/F/H/I</span><span class="tn ph">󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴󠁿🇸🇪 Suecia</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 8 -->
+            <div class="cell tab-r" style="grid-column: 1; grid-row: 8">
+              <div class="m">
+                <div class="m-date">1 JUL · ATL</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 L</span><span class="tn ph">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra</span></div>
+                  <div class="slot"><span class="seed">3 E/H/I/J/K</span><span class="tn ph">🇩🇿 Algeria</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ══ COL 2: R16-LEFT (4 cells × 2 rows each) ══ -->
+            <!-- rows 1-2 -->
+            <div class="cell conn-r" style="grid-column: 2; grid-row: 1/3">
+              <div class="m">
+                <div class="m-date">4 JUL · NYJ</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 3-4 -->
+            <div class="cell conn-r" style="grid-column: 2; grid-row: 3/5">
+              <div class="m">
+                <div class="m-date">4 JUL · HOU</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 5-6 -->
+            <div class="cell conn-r" style="grid-column: 2; grid-row: 5/7">
+              <div class="m">
+                <div class="m-date">5 JUL · PHI</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 7-8 -->
+            <div class="cell conn-r" style="grid-column: 2; grid-row: 7/9">
+              <div class="m">
+                <div class="m-date">5 JUL · MXC</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ══ COL 3: QF-LEFT (2 cells × 4 rows each) ══ -->
+            <!-- rows 1-4 -->
+            <div class="cell conn-r" style="grid-column: 3; grid-row: 1/5">
+              <div class="m">
+                <div class="m-date">QF · 9 JUL · BOS</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 5-8 -->
+            <div class="cell conn-r" style="grid-column: 3; grid-row: 5/9">
+              <div class="m">
+                <div class="m-date">QF · 11 JUL · MIA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ══ COL 4: CENTER (rows 1-8, flex column, gap) ══ -->
+            <div
+              class="cell"
+              style="
+                grid-column: 4;
+                grid-row: 1/9;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                gap: 10px;
+                padding: 4px;
+              ">
+              <!-- SF Top -->
+              <div class="m sf">
+                <div class="m-date">SF · 14 JUL · DAL</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+
+              <!-- Bronze Final -->
+              <div class="m bronze">
+                <div class="m-date">3ER LUGAR · 18 JUL · MIA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+
+              <!-- World Cup Final -->
+              <div class="m final">
+                <div class="m-date">🏆 · 19 JUL · NYJ</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+
+              <!-- SF Bottom -->
+              <div class="m sf">
+                <div class="m-date">SF · 15 JUL · ATL</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ══ COL 5: QF-RIGHT (2 cells × 4 rows each) ══ -->
+            <!-- rows 1-4 -->
+            <div class="cell conn-l" style="grid-column: 5; grid-row: 1/5">
+              <div class="m">
+                <div class="m-date">QF · 10 JUL · LA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 5-8 -->
+            <div class="cell conn-l" style="grid-column: 5; grid-row: 5/9">
+              <div class="m">
+                <div class="m-date">QF · 11 JUL · KC</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ══ COL 6: R16-RIGHT (4 cells × 2 rows each) ══ -->
+            <!-- rows 1-2 -->
+            <div class="cell conn-l" style="grid-column: 6; grid-row: 1/3">
+              <div class="m">
+                <div class="m-date">6 JUL · DAL</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 3-4 -->
+            <div class="cell conn-l" style="grid-column: 6; grid-row: 3/5">
+              <div class="m">
+                <div class="m-date">6 JUL · SEA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 5-6 -->
+            <div class="cell conn-l" style="grid-column: 6; grid-row: 5/7">
+              <div class="m">
+                <div class="m-date">7 JUL · ATL</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+            <!-- rows 7-8 -->
+            <div class="cell conn-l" style="grid-column: 6; grid-row: 7/9">
+              <div class="m">
+                <div class="m-date">7 JUL · VAN</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="tn"></span></div>
+                  <div class="slot"><span class="tn"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ══ COL 7: R32-RIGHT ══ -->
+            <!-- row 1 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 1">
+              <div class="m">
+                <div class="m-date">2 JUL · TOR</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">2 K</span><span class="tn ph">🇵🇹 Portugal</span></div>
+                  <div class="slot"><span class="seed">2 L</span><span class="tn ph">🇬🇭 Ghana</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 2 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 2">
+              <div class="m">
+                <div class="m-date">2 JUL · LA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 H</span><span class="tn ph">🇪🇸 España</span></div>
+                  <div class="slot"><span class="seed">2 J</span><span class="tn ph">🇦🇹 Austria</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 3 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 3">
+              <div class="m">
+                <div class="m-date">1 JUL · SEA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 G</span><span class="tn ph">🇪🇬 Egipto</span></div>
+                  <div class="slot"><span class="seed">3 A/E/H/I/J</span><span class="tn ph">🇩🇿 Algeria</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 4 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 4">
+              <div class="m">
+                <div class="m-date">1 JUL · SFO</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 D</span><span class="tn">🇺🇸 Estados Unidos</span></div>
+                  <div class="slot"><span class="seed">3 B/E/F/I/J</span><span class="tn ph">🇸🇪 Suecia</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 5 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 5">
+              <div class="m">
+                <div class="m-date">3 JUL · MIA</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 J</span><span class="tn">🇦🇷 Argentina</span></div>
+                  <div class="slot"><span class="seed">2 H</span><span class="tn ph">🇺🇾 Uruguay</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 6 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 6">
+              <div class="m">
+                <div class="m-date">3 JUL · DAL</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">2 D</span><span class="tn ph">🇦🇺 Australia</span></div>
+                  <div class="slot"><span class="seed">2 G</span><span class="tn ph">🇮🇷 Irán</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 7 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 7">
+              <div class="m">
+                <div class="m-date">3 JUL · KC</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 K</span><span class="tn ph">🇨🇴 Colombia</span></div>
+                  <div class="slot"><span class="seed">3 D/E/I/J/L</span><span class="tn ph">🇩🇿 Algeria</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- row 8 -->
+            <div class="cell tab-l" style="grid-column: 7; grid-row: 8">
+              <div class="m">
+                <div class="m-date">2 JUL · VAN</div>
+                <div class="m-slots">
+                  <div class="slot"><span class="seed">1 B</span><span class="tn">🇨🇭 Suiza</span></div>
+                  <div class="slot"><span class="seed">3 E/F/G/I/J</span><span class="tn ph">🇸🇪 Suecia</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /bracket -->
+        </div>
+        <!-- /bracket-scroll -->
+      </main>
+    </div>
+    <!-- /page -->
+
+    <footer class="footnote">Copyright 2026, Grupo CISA.</footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
