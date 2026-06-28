@@ -1,121 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Calendario CISA</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-<head>
-  <title>Calendario CISA</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
 
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/aos.css" />
 
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-brackets.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
-
-
-
-</head>
-
-<body>
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-
-    <header class="site-navbar py-4" role="banner" style="background-color: #ffffff">
-
-      <div class="container">
-        <div class="d-flex align-items-center">
-          <div class="site-logo cisa-logo">
-            <a href="index.html">
-              <img src="imagenes-cisa/cisa-logo.png" alt="Logo">
-            </a>
-          </div>
-          <div class="ml-auto">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li class="active"><a href="matches.html" class="nav-link">Fase de Grupos</a></li>
-                <li><a href="brackets.html" class="nav-link">Grupos y Brackets</a></li>
-              </ul>
-            </nav>
-
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-blue"><span
-                class="icon-menu h3 text-blue"></span></a>
+  <body>
+    <div class="site-wrap">
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close">
+            <span class="icon-close2 js-menu-toggle"></span>
           </div>
         </div>
+        <div class="site-mobile-menu-body"></div>
       </div>
 
-    </header>
+      <header class="site-navbar py-4" role="banner" style="background-color: #ffffff">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <div class="site-logo cisa-logo">
+              <a href="index.html">
+                <img src="imagenes-cisa/cisa-logo.png" alt="Logo" />
+              </a>
+            </div>
+            <div class="ml-auto">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li><a href="index.html" class="nav-link">Inicio</a></li>
+                  <li class="active"><a href="matches.html" class="nav-link">Fase de Grupos</a></li>
+                  <li><a href="brackets.html" class="nav-link">Eliminatorias</a></li>
+                </ul>
+              </nav>
 
-    <div class="hero" style="background-image: url('images/bg_3.jpg'); height: 30vh; filter: brightness(0.6)">
-
-    </div>
-    
-<div class="site-section bg-dark">
-      <div class="container">
-        
-        <div class="row mb-4">
-          <div class="col-lg-12">
-            <div class="widget-next-match">
-              <div class="widget-title">
-                <h3>Fase de Grupos</h3>
-              </div>
+              <a
+                href="#"
+                class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-blue"
+                ><span class="icon-menu h3 text-blue"></span
+              ></a>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+      </header>
+
+      <div class="site-section bg-dark">
+        <div class="spacer"></div>
+        <div class="container">
+          <aside class="sidebar">
+            <div class="gc">
+              <div class="gc-hd">GRUPO A</div>
+              <ul>
+                <li><span class="fi">🇲🇽</span>MÉXICO<span class="points">9</span></li>
+                <li><span class="fi">🇿🇦</span>SUDÁFRICA<span class="points">4</span></li>
+                <li><span class="fi">🇰🇷</span>COREA DEL SUR<span class="points">3</span></li>
+                <li><span class="fi">🇨🇿</span>REPÚBLICA CHECA<span class="points">1</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO B</div>
+              <ul>
+                <li><span class="fi">🇨🇦</span>CANADÁ<span class="points">4</span></li>
+                <li><span class="fi">🇧🇦</span>BOSNIA &amp; HERZ.<span class="points">4</span></li>
+                <li><span class="fi">🇶🇦</span>QATAR<span class="points">1</span></li>
+                <li><span class="fi">🇨🇭</span>SUIZA<span class="points">7</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO C</div>
+              <ul>
+                <li><span class="fi">🇧🇷</span>BRASIL<span class="points">7</span></li>
+                <li><span class="fi">🇲🇦</span>MARRUECOS<span class="points">7</span></li>
+                <li><span class="fi">🇭🇹</span>HAITÍ<span class="points">0</span></li>
+                <li><span class="fi">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>ESCOCIA<span class="points">3</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO D</div>
+              <ul>
+                <li><span class="fi">🇺🇸</span>ESTADOS UNIDOS<span class="points">6</span></li>
+                <li><span class="fi">🇵🇾</span>PARAGUAY<span class="points">4</span></li>
+                <li><span class="fi">🇦🇺</span>AUSTRALIA<span class="points">4</span></li>
+                <li><span class="fi">🇹🇷</span>TURQUÍA<span class="points">3</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO E</div>
+              <ul>
+                <li><span class="fi">🇩🇪</span>ALEMANIA<span class="points">6</span></li>
+                <li><span class="fi">🇨🇼</span>CURAZAO<span class="points">1</span></li>
+                <li><span class="fi">🇨🇮</span>COSTA DE MARFIL<span class="points">6</span></li>
+                <li><span class="fi">🇪🇨</span>ECUADOR<span class="points">4</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO F</div>
+              <ul>
+                <li><span class="fi">🇳🇱</span>PAÍSES BAJOS<span class="points">7</span></li>
+                <li><span class="fi">🇯🇵</span>JAPÓN<span class="points">5</span></li>
+                <li><span class="fi">🇸🇪</span>SUECIA<span class="points">4</span></li>
+                <li><span class="fi">🇹🇳</span>TÚNEZ<span class="points">0</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO G</div>
+              <ul>
+                <li><span class="fi">🇧🇪</span>BÉLGICA<span class="points">5</span></li>
+                <li><span class="fi">🇪🇬</span>EGIPTO<span class="points">5</span></li>
+                <li><span class="fi">🇮🇷</span>IRÁN<span class="points">3</span></li>
+                <li><span class="fi">🇳🇿</span>NUEVA ZELANDA<span class="points">1</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO H</div>
+              <ul>
+                <li><span class="fi">🇪🇸</span>ESPAÑA<span class="points">7</span></li>
+                <li><span class="fi">🇨🇻</span>CABO VERDE<span class="points">3</span></li>
+                <li><span class="fi">🇸🇦</span>ARABIA SAUDITA<span class="points">2</span></li>
+                <li><span class="fi">🇺🇾</span>URUGUAY<span class="points">2</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO I</div>
+              <ul>
+                <li><span class="fi">🇫🇷</span>FRANCIA<span class="points">9</span></li>
+                <li><span class="fi">🇸🇳</span>SENEGAL<span class="points">3</span></li>
+                <li><span class="fi">🇮🇶</span>IRAK<span class="points">0</span></li>
+                <li><span class="fi">🇳🇴</span>NORUEGA<span class="points">6</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO J</div>
+              <ul>
+                <li><span class="fi">🇦🇷</span>ARGENTINA<span class="points">9</span></li>
+                <li><span class="fi">🇩🇿</span>ARGELIA<span class="points">4</span></li>
+                <li><span class="fi">🇦🇹</span>AUSTRIA<span class="points">4</span></li>
+                <li><span class="fi">🇯🇴</span>JORDANIA<span class="points">0</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO K</div>
+              <ul>
+                <li><span class="fi">🇵🇹</span>PORTUGAL<span class="points">5</span></li>
+                <li><span class="fi">🇨🇩</span>RD CONGO<span class="points">4</span></li>
+                <li><span class="fi">🇺🇿</span>UZBEKISTÁN<span class="points">0</span></li>
+                <li><span class="fi">🇨🇴</span>COLOMBIA<span class="points">7</span></li>
+              </ul>
+            </div>
+            <div class="gc">
+              <div class="gc-hd">GRUPO L</div>
+              <ul>
+                <li><span class="fi">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>INGLATERRA<span class="points">7</span></li>
+                <li><span class="fi">🇭🇷</span>CROACIA<span class="points">6</span></li>
+                <li><span class="fi">🇬🇭</span>GHANA<span class="points">4</span></li>
+                <li><span class="fi">🇵🇦</span>PANAMÁ<span class="points">0</span></li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="row mb-4">
+            <div class="col-lg-12">
+              <div class="widget-next-match">
+                <div class="widget-title">
+                  <h3>Historial de Partidos</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/mexico.png" alt="Image">
+                        <img src="images/mexico.png" alt="Image" />
                         <h3>México</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/sudafrica.png" alt="Image">
+                        <img src="images/sudafrica.png" alt="Image" />
                         <h3>Sudáfrica</h3>
                       </div>
                     </div>
@@ -127,26 +228,24 @@
                     <span class="d-block">11 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">Estadio Banorte, CDMX</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO A</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO A</strong>
                   </p>
-                                  <h3><strong>2 - 0</strong></h3>
-
+                  <h3><strong>2 - 0</strong></h3>
                 </div>
-              
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/corea.png" alt="Image">
+                        <img src="images/corea.png" alt="Image" />
                         <h3>Corea del Sur</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/chequia.png" alt="Image">
+                        <img src="images/chequia.png" alt="Image" />
                         <h3>Chequia</h3>
                       </div>
                     </div>
@@ -158,27 +257,25 @@
                     <span class="d-block">11 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">Estadio Akron, Zapopan</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO A</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO A</strong>
                   </p>
-                                  <h3><strong>2 - 1</strong></h3>
-
+                  <h3><strong>2 - 1</strong></h3>
                 </div>
-              
+              </div>
             </div>
-          </div>
-          
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/canada.png" alt="Image">
+                        <img src="images/canada.png" alt="Image" />
                         <h3>Canadá</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/bosnia.png" alt="Image">
+                        <img src="images/bosnia.png" alt="Image" />
                         <h3>Bosnia</h3>
                       </div>
                     </div>
@@ -190,27 +287,25 @@
                     <span class="d-block">12 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">BMO Field, Toronto</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO B</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO B</strong>
                   </p>
-                                  <h3><strong>1 - 1</strong></h3>
-
+                  <h3><strong>1 - 1</strong></h3>
                 </div>
-              
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/eeuu.png" alt="Image">
+                        <img src="images/eeuu.png" alt="Image" />
                         <h3>EEUU</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/paraguay.png" alt="Image">
+                        <img src="images/paraguay.png" alt="Image" />
                         <h3>Paraguay</h3>
                       </div>
                     </div>
@@ -222,27 +317,26 @@
                     <span class="d-block">12 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">SoFi Stadium, Inglewood</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO D</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO D</strong>
                   </p>
-                <h3><strong>4 - 1</strong></h3>
+                  <h3><strong>4 - 1</strong></h3>
                 </div>
-              
+              </div>
             </div>
-          </div>
 
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/catar.png" alt="Image">
+                        <img src="images/catar.png" alt="Image" />
                         <h3>Catar</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/suiza.png" alt="Image">
+                        <img src="images/suiza.png" alt="Image" />
                         <h3>Suiza</h3>
                       </div>
                     </div>
@@ -253,27 +347,27 @@
                     <span class="d-block">13 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">Levi's Stadium, Santa Clara</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO B</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO B</strong>
                   </p>
-                                  <h3><strong>1 - 1</strong></h3>
+                  <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO END -->
 
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/brasil.png" alt="Image">
+                        <img src="images/brasil.png" alt="Image" />
                         <h3>Brasil</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/marruecos.png" alt="Image">
+                        <img src="images/marruecos.png" alt="Image" />
                         <h3>Marruecos</h3>
                       </div>
                     </div>
@@ -284,26 +378,26 @@
                     <span class="d-block">13 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">MetLife Stadium, East Rutherford</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO C</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO C</strong>
                   </p>
-                                  <h3><strong>1 - 1</strong></h3>
+                  <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/haiti.png" alt="Image">
+                        <img src="images/haiti.png" alt="Image" />
                         <h3>Haití</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/escosia.png" alt="Image">
+                        <img src="images/escosia.png" alt="Image" />
                         <h3>Escocia</h3>
                       </div>
                     </div>
@@ -314,26 +408,26 @@
                     <span class="d-block">13 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">Gillette Stadium, Foxborough</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO C</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO C</strong>
                   </p>
-                                  <h3><strong>0 - 1</strong></h3>
+                  <h3><strong>0 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/australia.png" alt="Image">
+                        <img src="images/australia.png" alt="Image" />
                         <h3>Australia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/turquia.png" alt="Image">
+                        <img src="images/turquia.png" alt="Image" />
                         <h3>Turquía</h3>
                       </div>
                     </div>
@@ -344,26 +438,26 @@
                     <span class="d-block">13 de Junio</span>
                     <span class="d-block">10:00 p.m.</span>
                     <strong class="text-primary">BC Place, Vancouver</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO D</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO D</strong>
                   </p>
-                                  <h3><strong>2 - 0</strong></h3>
+                  <h3><strong>2 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/alemania.png" alt="Image">
+                        <img src="images/alemania.png" alt="Image" />
                         <h3>Alemania</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/curazao.png" alt="Image">
+                        <img src="images/curazao.png" alt="Image" />
                         <h3>Curazao</h3>
                       </div>
                     </div>
@@ -374,26 +468,26 @@
                     <span class="d-block">14 de Junio</span>
                     <span class="d-block">11:00 a.m.</span>
                     <strong class="text-primary">NRG Stadium, Houston</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO E</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO E</strong>
                   </p>
-                                  <h3><strong>7 - 1</strong></h3>
+                  <h3><strong>7 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/paisesbajos.png" alt="Image">
+                        <img src="images/paisesbajos.png" alt="Image" />
                         <h3>Países Bajos</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/japon.png" alt="Image">
+                        <img src="images/japon.png" alt="Image" />
                         <h3>Japón</h3>
                       </div>
                     </div>
@@ -404,26 +498,26 @@
                     <span class="d-block">14 de Junio</span>
                     <span class="d-block">2:00 p.m.</span>
                     <strong class="text-primary">AT&T Stadium, Arlington</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO F</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO F</strong>
                   </p>
                   <h3><strong>2 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/costademarfil.png" alt="Image">
+                        <img src="images/costademarfil.png" alt="Image" />
                         <h3>Costa de Marfil</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/escuador.png" alt="Image">
+                        <img src="images/escuador.png" alt="Image" />
                         <h3>Ecuador</h3>
                       </div>
                     </div>
@@ -434,26 +528,26 @@
                     <span class="d-block">14 de Junio</span>
                     <span class="d-block">5:00 p.m.</span>
                     <strong class="text-primary">Lincoln Financial Field, Filadelfia</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO E</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO E</strong>
                   </p>
                   <h3><strong>1 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/suecia.png" alt="Image">
+                        <img src="images/suecia.png" alt="Image" />
                         <h3>Suecia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/tunez.png" alt="Image">
+                        <img src="images/tunez.png" alt="Image" />
                         <h3>Túnez</h3>
                       </div>
                     </div>
@@ -464,26 +558,26 @@
                     <span class="d-block">14 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">Estadio BBVA, Guadalupe</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO F</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO F</strong>
                   </p>
                   <h3><strong>5 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/espana.png" alt="Image">
+                        <img src="images/espana.png" alt="Image" />
                         <h3>España</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/caboverde.png" alt="Image">
+                        <img src="images/caboverde.png" alt="Image" />
                         <h3>Cabo Verde</h3>
                       </div>
                     </div>
@@ -494,26 +588,26 @@
                     <span class="d-block">15 de Junio</span>
                     <span class="d-block">10:00 a.m.</span>
                     <strong class="text-primary">Mercedes-Benz Stadium, Atlanta</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO H</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO H</strong>
                   </p>
                   <h3><strong>0 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/belgica.png" alt="Image">
+                        <img src="images/belgica.png" alt="Image" />
                         <h3>Bélgica</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/egipto.png" alt="Image">
+                        <img src="images/egipto.png" alt="Image" />
                         <h3>Egipto</h3>
                       </div>
                     </div>
@@ -524,26 +618,26 @@
                     <span class="d-block">15 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">Lumen Field, Seattle</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO G</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO G</strong>
                   </p>
                   <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/arabiasaudita.png" alt="Image">
+                        <img src="images/arabiasaudita.png" alt="Image" />
                         <h3>Arabia Saudita</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/uruguay.png" alt="Image">
+                        <img src="images/uruguay.png" alt="Image" />
                         <h3>Uruguay</h3>
                       </div>
                     </div>
@@ -554,26 +648,26 @@
                     <span class="d-block">15 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">Hard Rock Stadium, Miami Gardens</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO H</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO H</strong>
                   </p>
                   <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/iran.png" alt="Image">
+                        <img src="images/iran.png" alt="Image" />
                         <h3>Irán</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/nuevazelanda.png" alt="Image">
+                        <img src="images/nuevazelanda.png" alt="Image" />
                         <h3>Nueva Zelanda</h3>
                       </div>
                     </div>
@@ -584,26 +678,26 @@
                     <span class="d-block">15 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">SoFi Stadium, Inglewood</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO G</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO G</strong>
                   </p>
                   <h3><strong>2 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/francia.png" alt="Image">
+                        <img src="images/francia.png" alt="Image" />
                         <h3>Francia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/senegal.png" alt="Image">
+                        <img src="images/senegal.png" alt="Image" />
                         <h3>Senegal</h3>
                       </div>
                     </div>
@@ -614,26 +708,26 @@
                     <span class="d-block">16 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">MetLife Stadium, East Rutherford</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO I</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO I</strong>
                   </p>
                   <h3><strong>3 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/irak.png" alt="Image">
+                        <img src="images/irak.png" alt="Image" />
                         <h3>Irak</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/noruega.png" alt="Image">
+                        <img src="images/noruega.png" alt="Image" />
                         <h3>Noruega</h3>
                       </div>
                     </div>
@@ -644,26 +738,26 @@
                     <span class="d-block">16 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">Gillette Stadium, Foxborough</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO A</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO A</strong>
                   </p>
                   <h3><strong>1 - 4</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/argentina.png" alt="Image">
+                        <img src="images/argentina.png" alt="Image" />
                         <h3>Argentina</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/argelia.png" alt="Image">
+                        <img src="images/argelia.png" alt="Image" />
                         <h3>Argelia</h3>
                       </div>
                     </div>
@@ -674,26 +768,26 @@
                     <span class="d-block">16 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">GEHA Field at Arrowhead Stadium, Kansas City</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO J</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO J</strong>
                   </p>
                   <h3><strong>3 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/austria.png" alt="Image">
+                        <img src="images/austria.png" alt="Image" />
                         <h3>Austria</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/jordania.png" alt="Image">
+                        <img src="images/jordania.png" alt="Image" />
                         <h3>Jordania</h3>
                       </div>
                     </div>
@@ -704,26 +798,26 @@
                     <span class="d-block">16 de Junio</span>
                     <span class="d-block">10:00 p.m.</span>
                     <strong class="text-primary">Levi's Stadium, Santa Clara</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO J</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO J</strong>
                   </p>
                   <h3><strong>3 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/portugal.png" alt="Image">
+                        <img src="images/portugal.png" alt="Image" />
                         <h3>Portugal</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/congo.png" alt="Image">
+                        <img src="images/congo.png" alt="Image" />
                         <h3>RD Congo</h3>
                       </div>
                     </div>
@@ -734,26 +828,26 @@
                     <span class="d-block">17 de Junio</span>
                     <span class="d-block">11:00 a.m.</span>
                     <strong class="text-primary">NRG Stadium, Houston</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO K</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO K</strong>
                   </p>
                   <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/inglaterra.png" alt="Image">
+                        <img src="images/inglaterra.png" alt="Image" />
                         <h3>Inglaterra</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/croacia.png" alt="Image">
+                        <img src="images/croacia.png" alt="Image" />
                         <h3>Croacia</h3>
                       </div>
                     </div>
@@ -764,26 +858,26 @@
                     <span class="d-block">17 de Junio</span>
                     <span class="d-block">2:00 p.m.</span>
                     <strong class="text-primary">AT&T Stadium, Arlington</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO L</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO L</strong>
                   </p>
                   <h3><strong>4 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/ghana.png" alt="Image">
+                        <img src="images/ghana.png" alt="Image" />
                         <h3>Ghana</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/panama.png" alt="Image">
+                        <img src="images/panama.png" alt="Image" />
                         <h3>Panamá</h3>
                       </div>
                     </div>
@@ -794,26 +888,26 @@
                     <span class="d-block">17 de Junio</span>
                     <span class="d-block">5:00 p.m.</span>
                     <strong class="text-primary">BMO Field, Toronto</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO L</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO L</strong>
                   </p>
                   <h3><strong>1 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/uzbekistan.png" alt="Image">
+                        <img src="images/uzbekistan.png" alt="Image" />
                         <h3>Uzbekistán</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/colombia.png" alt="Image">
+                        <img src="images/colombia.png" alt="Image" />
                         <h3>Colombia</h3>
                       </div>
                     </div>
@@ -824,26 +918,26 @@
                     <span class="d-block">17 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">Estadio Banorte, CDMX</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO K</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO K</strong>
                   </p>
                   <h3><strong>1 - 3</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/chequia.png" alt="Image">
+                        <img src="images/chequia.png" alt="Image" />
                         <h3>Chequia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/sudafrica.png" alt="Image">
+                        <img src="images/sudafrica.png" alt="Image" />
                         <h3>Sudáfrica</h3>
                       </div>
                     </div>
@@ -854,26 +948,26 @@
                     <span class="d-block">18 de Junio</span>
                     <span class="d-block">10:00 a.m.</span>
                     <strong class="text-primary">Mercedes-Benz Stadium, Atlanta</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO A</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO A</strong>
                   </p>
                   <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/suiza.png" alt="Image">
+                        <img src="images/suiza.png" alt="Image" />
                         <h3>Suiza</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/bosnia.png" alt="Image">
+                        <img src="images/bosnia.png" alt="Image" />
                         <h3>Bosnia</h3>
                       </div>
                     </div>
@@ -884,26 +978,26 @@
                     <span class="d-block">18 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">SoFi Stadium, Inglewood</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO B</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO B</strong>
                   </p>
                   <h3><strong>4 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/canada.png" alt="Image">
+                        <img src="images/canada.png" alt="Image" />
                         <h3>Canadá</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/catar.png" alt="Image">
+                        <img src="images/catar.png" alt="Image" />
                         <h3>Catar</h3>
                       </div>
                     </div>
@@ -914,26 +1008,26 @@
                     <span class="d-block">18 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">BC Place, Vancouver</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO B</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO B</strong>
                   </p>
                   <h3><strong>6 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-          <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/mexico.png" alt="Image">
+                        <img src="images/mexico.png" alt="Image" />
                         <h3>México</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/corea.png" alt="Image">
+                        <img src="images/corea.png" alt="Image" />
                         <h3>Corea del Sur</h3>
                       </div>
                     </div>
@@ -944,26 +1038,26 @@
                     <span class="d-block">18 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">Estadio Akron, Zapopan</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO A</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO A</strong>
                   </p>
                   <h3><strong>1 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                    <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/eeuu.png" alt="Image">
+                        <img src="images/eeuu.png" alt="Image" />
                         <h3>EEUU</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/australia.png" alt="Image">
+                        <img src="images/australia.png" alt="Image" />
                         <h3>Australia</h3>
                       </div>
                     </div>
@@ -974,26 +1068,26 @@
                     <span class="d-block">19 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">Lumen Field, Seattle</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO D</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO D</strong>
                   </p>
                   <h3><strong>2 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                    <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/escosia.png" alt="Image">
+                        <img src="images/escosia.png" alt="Image" />
                         <h3>Escocia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/marruecos.png" alt="Image">
+                        <img src="images/marruecos.png" alt="Image" />
                         <h3>Marruecos</h3>
                       </div>
                     </div>
@@ -1004,26 +1098,26 @@
                     <span class="d-block">19 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">Gillette Stadium, Foxborough</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO C</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO C</strong>
                   </p>
                   <h3><strong>0 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                    <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/brasil.png" alt="Image">
+                        <img src="images/brasil.png" alt="Image" />
                         <h3>Brasil</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/haiti.png" alt="Image">
+                        <img src="images/haiti.png" alt="Image" />
                         <h3>Haití</h3>
                       </div>
                     </div>
@@ -1034,26 +1128,26 @@
                     <span class="d-block">19 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">Lincoln Field, Filadelfia</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO C</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO C</strong>
                   </p>
                   <h3><strong>3 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                    <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/turquia.png" alt="Image">
+                        <img src="images/turquia.png" alt="Image" />
                         <h3>Turquía</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/paraguay.png" alt="Image">
+                        <img src="images/paraguay.png" alt="Image" />
                         <h3>Paraguay</h3>
                       </div>
                     </div>
@@ -1064,26 +1158,26 @@
                     <span class="d-block">19 de Junio</span>
                     <span class="d-block">10:00 p.m.</span>
                     <strong class="text-primary">Levi's Stadium, Santa Clara</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO D</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO D</strong>
                   </p>
                   <h3><strong>0 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                              <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/paisesbajos.png" alt="Image">
+                        <img src="images/paisesbajos.png" alt="Image" />
                         <h3>Países Bajos</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/suecia.png" alt="Image">
+                        <img src="images/suecia.png" alt="Image" />
                         <h3>Suecia</h3>
                       </div>
                     </div>
@@ -1094,26 +1188,28 @@
                     <span class="d-block">20 de Junio</span>
                     <span class="d-block">11:00 a.m.</span>
                     <strong class="text-primary">NRG Stadium, Houston</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO F</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO F</strong>
                   </p>
-                  <h3><strong>5 - 1<br></strong></h3>
+                  <h3>
+                    <strong>5 - 1<br /></strong>
+                  </h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                              <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/alemania.png" alt="Image">
+                        <img src="images/alemania.png" alt="Image" />
                         <h3>Alemania</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/costademarfil.png" alt="Image">
+                        <img src="images/costademarfil.png" alt="Image" />
                         <h3>Costa de Marfil</h3>
                       </div>
                     </div>
@@ -1124,26 +1220,26 @@
                     <span class="d-block">20 de Junio</span>
                     <span class="d-block">2:00 p.m.</span>
                     <strong class="text-primary">BMO Field, Toronto</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO E</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO E</strong>
                   </p>
                   <h3><strong>2 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                              <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/escuador.png" alt="Image">
+                        <img src="images/escuador.png" alt="Image" />
                         <h3>Ecuador</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/curazao.png" alt="Image">
+                        <img src="images/curazao.png" alt="Image" />
                         <h3>Curazao</h3>
                       </div>
                     </div>
@@ -1154,26 +1250,26 @@
                     <span class="d-block">20 de Junio</span>
                     <span class="d-block">6:00 p.m.</span>
                     <strong class="text-primary">GEHA Field at Arrowhead Stadium, Kansas City</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO E</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO E</strong>
                   </p>
                   <h3><strong>0 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                              <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/tunez.png" alt="Image">
+                        <img src="images/tunez.png" alt="Image" />
                         <h3>Túnez</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/japon.png" alt="Image">
+                        <img src="images/japon.png" alt="Image" />
                         <h3>Japón</h3>
                       </div>
                     </div>
@@ -1184,26 +1280,26 @@
                     <span class="d-block">20 de Junio</span>
                     <span class="d-block">10:00 p.m.</span>
                     <strong class="text-primary">Estadio BBVA, Guadalupe</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO F</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO F</strong>
                   </p>
                   <h3><strong>0 - 4</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                        <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/espana.png" alt="Image">
+                        <img src="images/espana.png" alt="Image" />
                         <h3>España</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/arabiasaudita.png" alt="Image">
+                        <img src="images/arabiasaudita.png" alt="Image" />
                         <h3>Arabia Saudita</h3>
                       </div>
                     </div>
@@ -1214,26 +1310,26 @@
                     <span class="d-block">21 de Junio</span>
                     <span class="d-block">10:00 a.m.</span>
                     <strong class="text-primary">Mercedes-Benz Stadium, Atlanta</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO H</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO H</strong>
                   </p>
                   <h3><strong>4 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                        <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/belgica.png" alt="Image">
+                        <img src="images/belgica.png" alt="Image" />
                         <h3>Bélgica</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/iran.png" alt="Image">
+                        <img src="images/iran.png" alt="Image" />
                         <h3>Irán</h3>
                       </div>
                     </div>
@@ -1244,26 +1340,26 @@
                     <span class="d-block">21 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">SoFi Stadium, Inglewood</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO G</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO G</strong>
                   </p>
                   <h3><strong>0 -0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                        <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/uruguay.png" alt="Image">
+                        <img src="images/uruguay.png" alt="Image" />
                         <h3>Uruguay</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/caboverde.png" alt="Image">
+                        <img src="images/caboverde.png" alt="Image" />
                         <h3>Cabo Verde</h3>
                       </div>
                     </div>
@@ -1274,26 +1370,26 @@
                     <span class="d-block">21 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">Hard Rock Stadium, Miami Gardens</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO H</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO H</strong>
                   </p>
                   <h3><strong>2 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                        <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/nuevazelanda.png" alt="Image">
+                        <img src="images/nuevazelanda.png" alt="Image" />
                         <h3>Nueva Zelanda</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/egipto.png" alt="Image">
+                        <img src="images/egipto.png" alt="Image" />
                         <h3>Egipto</h3>
                       </div>
                     </div>
@@ -1304,26 +1400,26 @@
                     <span class="d-block">21 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">BC Place, Vancouver</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO G</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO G</strong>
                   </p>
                   <h3><strong>1 - 3</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                  <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/argentina.png" alt="Image">
+                        <img src="images/argentina.png" alt="Image" />
                         <h3>Argentina</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/austria.png" alt="Image">
+                        <img src="images/austria.png" alt="Image" />
                         <h3>Austria</h3>
                       </div>
                     </div>
@@ -1334,26 +1430,26 @@
                     <span class="d-block">22 de Junio</span>
                     <span class="d-block">11:00 a.m.</span>
                     <strong class="text-primary">AT&T Stadium, Arlington</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO J</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO J</strong>
                   </p>
                   <h3><strong>2 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                  <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/francia.png" alt="Image">
+                        <img src="images/francia.png" alt="Image" />
                         <h3>Francia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/irak.png" alt="Image">
+                        <img src="images/irak.png" alt="Image" />
                         <h3>Irak</h3>
                       </div>
                     </div>
@@ -1364,26 +1460,26 @@
                     <span class="d-block">22 de Junio</span>
                     <span class="d-block">3:00 p.m.</span>
                     <strong class="text-primary">Lincoln Financial Field, Filadelfia</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO I</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO I</strong>
                   </p>
                   <h3><strong>3 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                  <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/noruega.png" alt="Image">
+                        <img src="images/noruega.png" alt="Image" />
                         <h3>Noruega</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/senegal.png" alt="Image">
+                        <img src="images/senegal.png" alt="Image" />
                         <h3>Senegal</h3>
                       </div>
                     </div>
@@ -1394,26 +1490,26 @@
                     <span class="d-block">22 de Junio</span>
                     <span class="d-block">6:00 p.m.</span>
                     <strong class="text-primary">MetLife Stadium, East Rutherford</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO I</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO I</strong>
                   </p>
                   <h3><strong>3 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                  <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/jordania.png" alt="Image">
+                        <img src="images/jordania.png" alt="Image" />
                         <h3>Jordania</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/argelia.png" alt="Image">
+                        <img src="images/argelia.png" alt="Image" />
                         <h3>Argelia</h3>
                       </div>
                     </div>
@@ -1424,26 +1520,26 @@
                     <span class="d-block">22 de Junio</span>
                     <span class="d-block">9:00 p.m.</span>
                     <strong class="text-primary">Levi's Stadium, Santa Clara</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO J</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO J</strong>
                   </p>
                   <h3><strong>1 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                           <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/portugal.png" alt="Image">
+                        <img src="images/portugal.png" alt="Image" />
                         <h3>Portugal</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/uzbekistan.png" alt="Image">
+                        <img src="images/uzbekistan.png" alt="Image" />
                         <h3>Uzbekistán</h3>
                       </div>
                     </div>
@@ -1454,26 +1550,26 @@
                     <span class="d-block">23 de Junio</span>
                     <span class="d-block">11:00 a.m.</span>
                     <strong class="text-primary">NRG Stadium, Houston</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO K</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO K</strong>
                   </p>
                   <h3><strong>5 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                     <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/inglaterra.png" alt="Image">
+                        <img src="images/inglaterra.png" alt="Image" />
                         <h3>Inglaterra</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/ghana.png" alt="Image">
+                        <img src="images/ghana.png" alt="Image" />
                         <h3>Ghana</h3>
                       </div>
                     </div>
@@ -1484,26 +1580,26 @@
                     <span class="d-block">23 de Junio</span>
                     <span class="d-block">2:00 p.m.</span>
                     <strong class="text-primary">Gillette Stadium, Foxborough</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO L</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO L</strong>
                   </p>
                   <h3><strong>0 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                     <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/panama.png" alt="Image">
+                        <img src="images/panama.png" alt="Image" />
                         <h3>Panamá</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/croacia.png" alt="Image">
+                        <img src="images/croacia.png" alt="Image" />
                         <h3>Croacia</h3>
                       </div>
                     </div>
@@ -1514,26 +1610,26 @@
                     <span class="d-block">23 de Junio</span>
                     <span class="d-block">5:00 p.m.</span>
                     <strong class="text-primary">BMO Field, Toronto</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO L</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO L</strong>
                   </p>
                   <h3><strong>0 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                     <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/colombia.png" alt="Image">
+                        <img src="images/colombia.png" alt="Image" />
                         <h3>Colombia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/congo.png" alt="Image">
+                        <img src="images/congo.png" alt="Image" />
                         <h3>RD Congo</h3>
                       </div>
                     </div>
@@ -1544,26 +1640,26 @@
                     <span class="d-block">23 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">Estadio Akron, Zapopan</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO K</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO K</strong>
                   </p>
                   <h3><strong>1 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                               <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/suiza.png" alt="Image">
+                        <img src="images/suiza.png" alt="Image" />
                         <h3>Suiza</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/canada.png" alt="Image">
+                        <img src="images/canada.png" alt="Image" />
                         <h3>Canadá</h3>
                       </div>
                     </div>
@@ -1574,26 +1670,26 @@
                     <span class="d-block">24 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">BC Place, Vancouver</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO B</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO B</strong>
                   </p>
                   <h3><strong>2 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                               <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/bosnia.png" alt="Image">
+                        <img src="images/bosnia.png" alt="Image" />
                         <h3>Bosnia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/catar.png" alt="Image">
+                        <img src="images/catar.png" alt="Image" />
                         <h3>Catar</h3>
                       </div>
                     </div>
@@ -1604,26 +1700,26 @@
                     <span class="d-block">24 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">Lumen Field, Seattle</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO B</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO B</strong>
                   </p>
                   <h3><strong>3 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                               <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/marruecos.png" alt="Image">
+                        <img src="images/marruecos.png" alt="Image" />
                         <h3>Marruecos</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/haiti.png" alt="Image">
+                        <img src="images/haiti.png" alt="Image" />
                         <h3>Haití</h3>
                       </div>
                     </div>
@@ -1634,26 +1730,26 @@
                     <span class="d-block">24 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">Mercedes-Benz Stadium, Atlanta</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO C</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO C</strong>
                   </p>
                   <h3><strong>4 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                               <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/escosia.png" alt="Image">
+                        <img src="images/escosia.png" alt="Image" />
                         <h3>Escocia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/brasil.png" alt="Image">
+                        <img src="images/brasil.png" alt="Image" />
                         <h3>Brasil</h3>
                       </div>
                     </div>
@@ -1664,26 +1760,26 @@
                     <span class="d-block">24 de Junio</span>
                     <span class="d-block">4:00 p.m.</span>
                     <strong class="text-primary">Hard Rock Stadium, Miami Gardens</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO C</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO C</strong>
                   </p>
                   <h3><strong>0 - 3</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                               <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/sudafrica.png" alt="Image">
+                        <img src="images/sudafrica.png" alt="Image" />
                         <h3>Sudáfrica</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/corea.png" alt="Image">
+                        <img src="images/corea.png" alt="Image" />
                         <h3>Corea del Sur</h3>
                       </div>
                     </div>
@@ -1694,26 +1790,26 @@
                     <span class="d-block">24 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">Estadio BBVA, Guadalupe</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO A</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO A</strong>
                   </p>
                   <h3><strong>1 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                               <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/chequia.png" alt="Image">
+                        <img src="images/chequia.png" alt="Image" />
                         <h3>Chequia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/mexico.png" alt="Image">
+                        <img src="images/mexico.png" alt="Image" />
                         <h3>México</h3>
                       </div>
                     </div>
@@ -1724,26 +1820,26 @@
                     <span class="d-block">24 de Junio</span>
                     <span class="d-block">7:00 p.m.</span>
                     <strong class="text-primary">Estadio Banorte, CDMX</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO A</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO A</strong>
                   </p>
                   <h3><strong>0 - 3</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                         <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/curazao.png" alt="Image">
+                        <img src="images/curazao.png" alt="Image" />
                         <h3>Curazao</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/costademarfil.png" alt="Image">
+                        <img src="images/costademarfil.png" alt="Image" />
                         <h3>Costa de Marfil</h3>
                       </div>
                     </div>
@@ -1754,26 +1850,26 @@
                     <span class="d-block">25 de Junio</span>
                     <span class="d-block">2:00 p.m.</span>
                     <strong class="text-primary">Lincoln Financial Field, Filadelfia</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO E</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO E</strong>
                   </p>
                   <h3><strong>0 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                   <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/escuador.png" alt="Image">
+                        <img src="images/escuador.png" alt="Image" />
                         <h3>Ecuador</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/alemania.png" alt="Image">
+                        <img src="images/alemania.png" alt="Image" />
                         <h3>Alemania</h3>
                       </div>
                     </div>
@@ -1784,26 +1880,26 @@
                     <span class="d-block">25 de Junio</span>
                     <span class="d-block">2:00 p.m.</span>
                     <strong class="text-primary">MetLife Stadium, East Rutherford</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO E</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO E</strong>
                   </p>
                   <h3><strong>2 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                   <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/tunez.png" alt="Image">
+                        <img src="images/tunez.png" alt="Image" />
                         <h3>Túnez</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/paisesbajos.png" alt="Image">
+                        <img src="images/paisesbajos.png" alt="Image" />
                         <h3>Países Bajos</h3>
                       </div>
                     </div>
@@ -1814,26 +1910,26 @@
                     <span class="d-block">25 de Junio</span>
                     <span class="d-block">5:00 p.m.</span>
                     <strong class="text-primary">GEHA Field at Arrowhead Stadium, Kansas City</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO F</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO F</strong>
                   </p>
                   <h3><strong>1 - 3</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                   <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/japon.png" alt="Image">
+                        <img src="images/japon.png" alt="Image" />
                         <h3>Japón</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/suecia.png" alt="Image">
+                        <img src="images/suecia.png" alt="Image" />
                         <h3>Suecia</h3>
                       </div>
                     </div>
@@ -1844,26 +1940,26 @@
                     <span class="d-block">25 de Junio</span>
                     <span class="d-block">5:00 p.m.</span>
                     <strong class="text-primary">AT&T Stadium, Arlington</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO F</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO F</strong>
                   </p>
                   <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                   <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/turquia.png" alt="Image">
+                        <img src="images/turquia.png" alt="Image" />
                         <h3>Turquía</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/eeuu.png" alt="Image">
+                        <img src="images/eeuu.png" alt="Image" />
                         <h3>EEUU</h3>
                       </div>
                     </div>
@@ -1874,26 +1970,26 @@
                     <span class="d-block">25 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">SoFi Stadium, Inglewood</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO D</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO D</strong>
                   </p>
                   <h3><strong>3 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                   <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/paraguay.png" alt="Image">
+                        <img src="images/paraguay.png" alt="Image" />
                         <h3>Paraguay</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/australia.png" alt="Image">
+                        <img src="images/australia.png" alt="Image" />
                         <h3>Australia</h3>
                       </div>
                     </div>
@@ -1904,26 +2000,26 @@
                     <span class="d-block">25 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">Levi's Stadium, Santa Clara</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO D</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO D</strong>
                   </p>
                   <h3><strong>0 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                             <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/noruega.png" alt="Image">
+                        <img src="images/noruega.png" alt="Image" />
                         <h3>Noruega</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/francia.png" alt="Image">
+                        <img src="images/francia.png" alt="Image" />
                         <h3>Francia</h3>
                       </div>
                     </div>
@@ -1934,26 +2030,26 @@
                     <span class="d-block">26 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">Gillette Stadium, Foxborough</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO I</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO I</strong>
                   </p>
                   <h3><strong>1 - 4</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                       <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/senegal.png" alt="Image">
+                        <img src="images/senegal.png" alt="Image" />
                         <h3>Senegal</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/irak.png" alt="Image">
+                        <img src="images/irak.png" alt="Image" />
                         <h3>Irak</h3>
                       </div>
                     </div>
@@ -1964,26 +2060,26 @@
                     <span class="d-block">26 de Junio</span>
                     <span class="d-block">1:00 p.m.</span>
                     <strong class="text-primary">BMO Field, Toronto</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO I</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO I</strong>
                   </p>
                   <h3><strong>5 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                       <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/caboverde.png" alt="Image">
+                        <img src="images/caboverde.png" alt="Image" />
                         <h3>Cabo Verde</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/arabiasaudita.png" alt="Image">
+                        <img src="images/arabiasaudita.png" alt="Image" />
                         <h3>Arabia Saudita</h3>
                       </div>
                     </div>
@@ -1994,26 +2090,26 @@
                     <span class="d-block">26 de Junio</span>
                     <span class="d-block">6:00 p.m.</span>
                     <strong class="text-primary">NRG Stadium, Houston</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO H</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO H</strong>
                   </p>
                   <h3><strong>0 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                       <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/uruguay.png" alt="Image">
+                        <img src="images/uruguay.png" alt="Image" />
                         <h3>Uruguay</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/espana.png" alt="Image">
+                        <img src="images/espana.png" alt="Image" />
                         <h3>España</h3>
                       </div>
                     </div>
@@ -2024,26 +2120,26 @@
                     <span class="d-block">26 de Junio</span>
                     <span class="d-block">6:00 p.m.</span>
                     <strong class="text-primary">Estadio Akron, Zapopan</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO H</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO H</strong>
                   </p>
                   <h3><strong>0 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                       <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/nuevazelanda.png" alt="Image">
+                        <img src="images/nuevazelanda.png" alt="Image" />
                         <h3>Nueva Zelanda</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/belgica.png" alt="Image">
+                        <img src="images/belgica.png" alt="Image" />
                         <h3>Bélgica</h3>
                       </div>
                     </div>
@@ -2054,26 +2150,26 @@
                     <span class="d-block">26 de Junio</span>
                     <span class="d-block">9:00 p.m.</span>
                     <strong class="text-primary">BC Place, Vancouver</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO G</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO G</strong>
                   </p>
                   <h3><strong>1 - 5</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                       <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/egipto.png" alt="Image">
+                        <img src="images/egipto.png" alt="Image" />
                         <h3>Egipto</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/iran.png" alt="Image">
+                        <img src="images/iran.png" alt="Image" />
                         <h3>Irán</h3>
                       </div>
                     </div>
@@ -2084,26 +2180,26 @@
                     <span class="d-block">26 de Junio</span>
                     <span class="d-block">9:00 p.m.</span>
                     <strong class="text-primary">Lumen Field, Seattle</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO G</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO G</strong>
                   </p>
                   <h3><strong>1 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                                 <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/panama.png" alt="Image">
+                        <img src="images/panama.png" alt="Image" />
                         <h3>Panamá</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/inglaterra.png" alt="Image">
+                        <img src="images/inglaterra.png" alt="Image" />
                         <h3>Inglaterra</h3>
                       </div>
                     </div>
@@ -2114,26 +2210,26 @@
                     <span class="d-block">27 de Junio</span>
                     <span class="d-block">3:00 p.m.</span>
                     <strong class="text-primary">MetLife Stadium, East Rutherford</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO L</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO L</strong>
                   </p>
                   <h3><strong>0 - 2</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                                           <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/croacia.png" alt="Image">
+                        <img src="images/croacia.png" alt="Image" />
                         <h3>Croacia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/ghana.png" alt="Image">
+                        <img src="images/ghana.png" alt="Image" />
                         <h3>Ghana</h3>
                       </div>
                     </div>
@@ -2144,26 +2240,26 @@
                     <span class="d-block">27 de Junio</span>
                     <span class="d-block">3:00 p.m.</span>
                     <strong class="text-primary">Lincoln Financial Field, Filadelfia</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO L</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO L</strong>
                   </p>
                   <h3><strong>2 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                                           <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/colombia.png" alt="Image">
+                        <img src="images/colombia.png" alt="Image" />
                         <h3>Colombia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/portugal.png" alt="Image">
+                        <img src="images/portugal.png" alt="Image" />
                         <h3>Portugal</h3>
                       </div>
                     </div>
@@ -2174,26 +2270,26 @@
                     <span class="d-block">27 de Junio</span>
                     <span class="d-block">5:30 p.m.</span>
                     <strong class="text-primary">Hard Rock Stadium, Miami Gardens</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO K</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO K</strong>
                   </p>
                   <h3><strong>0 - 0</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                                           <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/congo.png" alt="Image">
+                        <img src="images/congo.png" alt="Image" />
                         <h3>RD Congo</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/uzbekistan.png" alt="Image">
+                        <img src="images/uzbekistan.png" alt="Image" />
                         <h3>Uzbekistán</h3>
                       </div>
                     </div>
@@ -2204,26 +2300,26 @@
                     <span class="d-block">27 de Junio</span>
                     <span class="d-block">5:30 p.m.</span>
                     <strong class="text-primary">Mercedes-Benz Stadium, Atlanta</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO K</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO K</strong>
                   </p>
                   <h3><strong>3 - 1</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                                           <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/argelia.png" alt="Image">
+                        <img src="images/argelia.png" alt="Image" />
                         <h3>Argelia</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/austria.png" alt="Image">
+                        <img src="images/austria.png" alt="Image" />
                         <h3>Austria</h3>
                       </div>
                     </div>
@@ -2234,26 +2330,26 @@
                     <span class="d-block">27 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">GEHA Field at Arrowhead Stadium, Kansas City</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO J</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO J</strong>
                   </p>
                   <h3><strong>3 - 3</strong></h3>
                 </div>
+              </div>
             </div>
-          </div>
-          <!-- PROXIMO PARTIDO END -->
-                                                                                                                                           <!-- PROXIMO PARTIDO -->
-          <div class="col-lg-6 mb-4">
-            <div class="bg-light p-4 rounded">
-              <div class="widget-body">
+            <!-- PROXIMO PARTIDO END -->
+            <!-- PROXIMO PARTIDO -->
+            <div class="col-lg-6 mb-4">
+              <div class="bg-light p-4 rounded">
+                <div class="widget-body">
                   <div class="widget-vs">
                     <div class="d-flex align-items-center justify-content-between w-100">
                       <div class="team-1 text-center">
-                        <img src="images/jordania.png" alt="Image">
+                        <img src="images/jordania.png" alt="Image" />
                         <h3>Jordania</h3>
                       </div>
                       <div class="team-2 text-center">
-                        <img src="images/argentina.png" alt="Image">
+                        <img src="images/argentina.png" alt="Image" />
                         <h3>Argentina</h3>
                       </div>
                     </div>
@@ -2264,38 +2360,36 @@
                     <span class="d-block">27 de Junio</span>
                     <span class="d-block">8:00 p.m.</span>
                     <strong class="text-primary">AT&T Stadium, Arlington</strong>
-                                      <br>
-                  <strong class="text-primary">GRUPO J</strong>
+                    <br />
+                    <strong class="text-primary">GRUPO J</strong>
                   </p>
                   <h3><strong>1 - 3</strong></h3>
                 </div>
+              </div>
             </div>
+            <!-- PROXIMO PARTIDO END -->
           </div>
-          <!-- PROXIMO PARTIDO END -->
+        </div>
+        <!-- .site-section -->
       </div>
-    </div> <!-- .site-section -->
     </div>
-  </div>
-  <!-- .site-wrap -->
+    <!-- .site-wrap -->
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
 
-
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
