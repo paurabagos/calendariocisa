@@ -240,8 +240,8 @@ body {
     align-items: center;
     padding: 0.11rem 0;
     border-bottom: 1px solid #ddd;
-    color: var(--text);
-    font-size: 0.68rem;
+    color: black;
+    font-size: 0.72rem;
     font-weight: 600;
     min-height: 1.25rem;
 }
@@ -257,6 +257,7 @@ body {
 .tn {
     flex: 1;
     padding: 0 0.22rem;
+    color: var(--text);
     font-weight: bold;
 }
 
